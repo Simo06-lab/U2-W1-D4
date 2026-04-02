@@ -1,0 +1,79 @@
+body {
+  font-family: "Indie Flower", cursive;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  flex-direction: column;
+  box-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.2),
+    6px 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s linear;
+}
+.tablo {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.container {
+  border-radius: 20px;
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 600px;
+}
+h2 {
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 700;
+}
+p {
+  font-size: 20px;
+  line-height: 2;
+}
+.card:nth-child(1),
+.card:nth-child(5),
+.card:nth-child(7) {
+  transform: rotate(-5deg);
+  background:
+    linear-gradient(to top, rgba(180, 175, 140, 0.8) 0%, transparent 40%),
+    linear-gradient(135deg, #ffffcc 0%, #d4d4a0 100%);
+}
+
+.card:nth-child(2),
+.card:nth-child(4),
+.card:nth-child(8) {
+  transform: rotate(3deg);
+  background:
+    linear-gradient(to top, rgba(140, 175, 155, 0.8) 0%, transparent 40%),
+    linear-gradient(135deg, #ccf2e0 0%, #9ec4b0 100%);
+}
+
+.card:nth-child(3),
+.card:nth-child(6) {
+  transform: rotate(-4deg);
+  background:
+    linear-gradient(to top, rgba(155, 150, 190, 0.8) 0%, transparent 40%),
+    linear-gradient(135deg, #d4d0f0 0%, #a8a4d4 100%);
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    13px 37px 20px 0px rgba(0, 0, 0, 0.3);
+}
